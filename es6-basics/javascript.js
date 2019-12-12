@@ -310,19 +310,48 @@
 
 // request('http:// request.com', {car:ford})
 
-const createCharacter = (name, powers) => {
-  return {
-    name,
-    powers,
-    getFriends() {
-      return 'Luis lane'
-    },
-    getEnemies() {
-      return 'Skeletor'
-    }
-  }
-}
+// const createCharacter = (name, powers) => {
+//   return {
+//     name,
+//     powers,
+//     getFriends() {
+//       return 'Luis lane'
+//     },
+//     getEnemies() {
+//       return 'Skeletor'
+//     }
+//   }
+// }
 
-const characterObj = createCharacter('Superman', 'Fly');
+// const characterObj = createCharacter('Superman', 'Fly');
 
-console.log(characterObj.getEnemies());
+// console.log(characterObj.getEnemies());
+
+// function randomBrand() {
+//   const brands = ['ford', 'nissan', 'bmw'];
+//   return brands[Math.floor(Math.random() * brands.length)];
+// }
+
+// function cars(brand = randomBrand()) {
+//   console.log(`My brand is ${brand}`);
+// }
+// cars()
+
+// function hey() {
+//   console.log('hey')
+// }
+
+// function args(...args) {
+//   console.log(args[2])
+// }
+
+// args('Val 1', 'Val 2', hey());
+
+const brands = ["Ford", "Nissan"];
+const otherBrand = ["Audi", "BMW"]
+
+// const newArray = brands.concat(otherBrand);
+
+const newArray = [...brands, ...otherBrand];
+
+console.log(newArray)
