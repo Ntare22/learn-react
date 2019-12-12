@@ -198,27 +198,97 @@
 
 // console.log(result)
 
-const cars = [
-  { brand: "Ford", price: 500, available: 2, type: "Sport car" },
-  { brand: "Nissan", price: 200, available: 5, type: "Wagon" },
-  { brand: "Chevy", price: 300, available: 4, type: "Sport car" },
-  { brand: "Porshe", price: 100, available: 1, type: "Urban" },
-];
+// const cars = [
+//   { brand: "Ford", price: 500, available: 2, type: "Sport car" },
+//   { brand: "Nissan", price: 200, available: 5, type: "Wagon" },
+//   { brand: "Chevy", price: 300, available: 4, type: "Sport car" },
+//   { brand: "Porshe", price: 100, available: 1, type: "Urban" },
+// ];
 
-const getResults = (price, type) => {
-  return cars.find((car) => {
-    return car.price < price && car.available > 0 && car.type === type;
-  })
-}
+// const getResults = (price, type) => {
+//   return cars.find((car) => {
+//     return car.price < price && car.available > 0 && car.type === type;
+//   })
+// }
 
-document.querySelector('.search').addEventListener('click', () => {
-  let price = parseInt(document.querySelector('#price').value);
-  let type = document.querySelector('#type').value;
+// document.querySelector('.search').addEventListener('click', () => {
+//   let price = parseInt(document.querySelector('#price').value);
+//   let type = document.querySelector('#type').value;
 
-  let results = getResults(price, type);
-  if (results) {
-    console.log(`Found ${results.brand} for $${results.price}`)
-  } else {
-    console.log(`No cars available filling those criteria`)
-  }
-})
+//   let results = getResults(price, type);
+//   if (results) {
+//     console.log(`Found ${results.brand} for $${results.price}`)
+//   } else {
+//     console.log(`No cars available filling those criteria`)
+//   }
+// })
+
+// const students = [
+//   { name: "Francis", grade: 5 }, 
+//   { name: "Martin", grade: 5 },
+//   { name: "Martha", grade: 5 }
+// ]
+
+// let passedTheCourse = students.some((student) => {
+//   return student.grade >= 6;
+// })
+
+// // let passedTheCourse = false;
+
+// // for (let i = 0; i < students.length; i++) {
+// //   let student = students[i];
+
+// //   if(student.grade < 6) {
+// //     passedTheCourse = true;
+// //     break;
+// //   } else {
+// //     passedTheCourse = false;
+// //   }
+// // }
+
+// console.log(passedTheCourse)
+
+// const previous = 200;
+
+// const current = [
+//   { expense: 'Guitar', amount: 200 },
+//   { expense: 'Mic', amount: 100 },
+//   { expense: 'Starp', amount: 100 }
+// ]
+
+// const results = current.reduce((sum, expense) => {
+//   return sum + expense.amount;
+// }, previous);
+
+// console.log(results);
+
+
+// const users = [
+//   { name: "Francis", lastname: 'Norton', age: 25 },
+//   { name: "Martha", lastname: 'Norton', age: 55 },
+//   { name: "Rob", lastname: 'Norton', age: 63 }
+// ]
+
+// const names = users.reduce((start, user) => {
+//   start.push(user.name);
+//   return start;
+// }, [])
+
+// console.log(names)
+
+// const names = ['Jane', 'Thomas', 'James'];
+
+// for (let name of names) {
+//   console.log(name)
+// }
+
+// const numbers = [10, 20, 30, 40, 50]
+
+// let total = 0;
+
+// for (let number in numbers) {
+//   total += numbers[number];
+// }
+
+// console.log(total);
+
