@@ -292,3 +292,16 @@
 
 // console.log(total);
 
+const cars = {
+  brands: ['Ford', 'Audi', 'BMW'],
+  category: 'Sport Car',
+  message: function() {
+    return this.brands.map((brand) => {
+      console.log(`${brand} is a ${this.category}`)
+    })
+  }
+}
+
+
+
+cars.message();
