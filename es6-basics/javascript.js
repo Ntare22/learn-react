@@ -292,16 +292,37 @@
 
 // console.log(total);
 
-const cars = {
-  brands: ['Ford', 'Audi', 'BMW'],
-  category: 'Sport Car',
-  message: function() {
-    return this.brands.map((brand) => {
-      console.log(`${brand} is a ${this.category}`)
-    })
+// const cars = {
+//   brands: ['Ford', 'Audi', 'BMW'],
+//   category: 'Sport Car',
+//   message: function() {
+//     return this.brands.map((brand) => {
+//       console.log(`${brand} is a ${this.category}`)
+//     })
+//   }
+// }
+
+// cars.message();
+
+// const request = (url, data) => {
+//   $.ajax({method:'post', url, data})
+// }
+
+// request('http:// request.com', {car:ford})
+
+const createCharacter = (name, powers) => {
+  return {
+    name,
+    powers,
+    getFriends() {
+      return 'Luis lane'
+    },
+    getEnemies() {
+      return 'Skeletor'
+    }
   }
 }
 
+const characterObj = createCharacter('Superman', 'Fly');
 
-
-cars.message();
+console.log(characterObj.getEnemies());
