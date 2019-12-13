@@ -310,19 +310,201 @@
 
 // request('http:// request.com', {car:ford})
 
-const createCharacter = (name, powers) => {
-  return {
-    name,
-    powers,
-    getFriends() {
-      return 'Luis lane'
-    },
-    getEnemies() {
-      return 'Skeletor'
-    }
-  }
-}
+// const createCharacter = (name, powers) => {
+//   return {
+//     name,
+//     powers,
+//     getFriends() {
+//       return 'Luis lane'
+//     },
+//     getEnemies() {
+//       return 'Skeletor'
+//     }
+//   }
+// }
 
-const characterObj = createCharacter('Superman', 'Fly');
+// const characterObj = createCharacter('Superman', 'Fly');
 
-console.log(characterObj.getEnemies());
+// console.log(characterObj.getEnemies());
+
+// function randomBrand() {
+//   const brands = ['ford', 'nissan', 'bmw'];
+//   return brands[Math.floor(Math.random() * brands.length)];
+// }
+
+// function cars(brand = randomBrand()) {
+//   console.log(`My brand is ${brand}`);
+// }
+// cars()
+
+// function hey() {
+//   console.log('hey')
+// }
+
+// function args(...args) {
+//   console.log(args[2])
+// }
+
+// args('Val 1', 'Val 2', hey());
+
+// const brands = ["Ford", "Nissan"];
+// const otherBrand = ["Audi", "BMW"]
+
+// // const newArray = brands.concat(otherBrand);
+
+// const newArray = [...brands, ...otherBrand];
+
+// console.log(newArray)
+
+// function Car() {
+
+// }
+
+// var car = new Car();
+// Car.prototype.status = 'New';
+// Car.prototype.wheels = 4;
+// Car.prototype.avail = function () {
+//   console.log('available')
+// }
+
+// console.log(car.__proto__)
+
+
+// class Car {
+//   constructor({status, wheels, avail}){
+//     this.status = status;
+//     this.wheels = wheels;
+//     this.avail = avail;
+//   }
+// }
+
+// const car = new Car({
+//   status:'New',
+//   wheels: 4,
+//   avail: () => {
+//     console.log('avail')
+//   }
+// })
+
+
+// class Car {
+//   constructor() {
+//     this.condition = 'New';
+//     this.wheels = '4';
+//     this.avail = () => {
+//       console.log('avail')
+//     }
+//   }
+
+//   otherFunction(){
+//     console.log('Hey')
+//   }
+// }
+
+// class Ford extends Car {
+//   constructor() {
+//     super();
+//   }
+// }
+
+// const car = new Car();
+// const ford = new Ford();
+
+// ford.color = 'red'
+// console.log(ford);
+
+// const user = {
+//   name: 'Francis',
+//   lastname: 'Jones',
+//   age: 25
+// };
+
+// const message = ({name, lastname, age}, salute) => {
+//   console.log(`my name is ${name} ${lastname}, age ${age}, ${salute}`)
+// }
+
+// message(user, 'hey')
+
+// const cars = [
+//   'Camaro',
+//   'Nova',
+//   'A4'
+// ];
+
+// const [camaro, nova, a4] = cars;
+
+// console.log(camaro)
+
+
+
+// const users = [
+//   { name: "Francis", lastname: 'Norton', age: 25 },
+//   { name: "Martha", lastname: 'Jones', age: 55 },
+//   { name: "Rob", lastname: 'James', age: 63 }
+// ]
+
+// const [{lastname}] = users;
+
+// console.log(lastname)
+
+
+// const users = {
+//   names:['Francis', 'Martha', 'Ray']
+// }
+
+// const {names:[name1, name2, name3]} = users;
+
+// console.log(name3)
+
+// function createCar({brand, model}) {
+
+// }
+
+// const car = {
+//   brand: 'ford',
+//   model: 'focus',
+//   color: 'red',
+//   year: '2015', 
+//   type: 'fast'
+// }
+
+// createCar('Ford', 'Focus')
+
+
+// Unresolved, Pending
+// Resolved, Fulfilled
+// Rejected
+
+// let promise = new Promise((resolved, rejected) => {
+//   setTimeout(() => {
+//     rejected();
+//   }, 5000);
+
+// })
+
+// promise
+//   .then(() => console.log('finished'))
+//   .then(() => console.log('finished 2'))
+//   .catch(() => console.log('damn'))
+
+
+// const url = 'https://jsonplaceholder.typicode.com/posts/';
+
+// fetch(url, {
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/json'
+//   },
+//   body: JSON.stringify({title:'some title'}),
+//   mode: 'cors',
+//   redirect:xxx,
+// })
+// .then(response => response.json())
+// .then(data => console.log(data))
+// .catch(error => console.log('fucked up', error))
+
+// console.log('foo'.repeat(4*10))
+
+// console.log(Number.isSafeInteger(100));
+// console.log(Number.isInteger(0.100));
+// console.log(Math.trunc(1.10));
