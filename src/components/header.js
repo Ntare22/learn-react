@@ -4,20 +4,21 @@ import React, { Component } from 'react';
 
 class Header extends Component {
 
-  state = {
+  state = { 
+    active: 'active',
     keywords: ''
   }
 
   inputChangeHander = (event) => {
-    // console.log(event.target.value)
     this.setState({
       keywords: event.target.value
     })
   }
 
   render() {
+
     return (
-      <header>
+      <header className={this.state.active }>
         <div className='logo'>Logo</div>
         <input type="text" onChange={this.inputChangeHander}/>
       </header>
